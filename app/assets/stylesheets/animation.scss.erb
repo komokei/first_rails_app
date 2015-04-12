@@ -2,13 +2,12 @@
   width: 200px;
   display: inline-block;
   position: relative;
-
-  li {
-    padding: 0% 1%;
-    float: left;
-    display: block;
-    position: absolute;
-  }
+    li {
+      padding: 0% 1%;
+      float: left;
+      display: block;
+      position: absolute;
+    }
 }
 
 .yazirushi-box {
@@ -18,11 +17,13 @@
 }
 
 .to-yazirushi-seccond {
-  -webkit-animation: www 4s ease 1.5s infinite forwards;
+  -webkit-animation: yazirushi-se 4s ease 1.5s infinite forwards;
+  animation: yazirushi-se 4s ease 1.5s infinite forwards;
 }
 
 .to-yazirushi-third {
-  -webkit-animation: www2 4s ease 1.5s infinite forwards;
+  -webkit-animation: yazirushi-th 4s ease 1.5s infinite forwards;
+  animation: yazirushi-th 4s ease 1.5s infinite forwards;
   position: relative;
 }
 
@@ -45,10 +46,15 @@
   border-top: 10px solid transparent;
   border-left: 10px solid #FF70BC;
   border-bottom: 10px solid transparent;
-  -webkit-animation : wwwww 4s ease-in-out 1.5s infinite forwards;
+  -webkit-animation : yazirushi-to-big 4s ease-in-out 1.5s infinite forwards;
+  animation : yazirushi-to-big 4s ease-in-out 1.5s infinite forwards;
 }
 
-@-webkit-keyframes wwwww {
+/* ----------------------
+アニメーション / keyframes
+------------------------*/
+
+@-webkit-keyframes yazirushi-to-big {
   0% {
     border-right: 10px solid transparent;
     border-top: 10px solid transparent;
@@ -73,7 +79,33 @@
   }
 }
 
-@-webkit-keyframes www {
+@keyframes yazirushi-to-big {
+  0% {
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-left: 10px solid #FF70BC;
+    border-bottom: 10px solid transparent;
+  }
+
+  40% {
+    top: -10px;
+    border-right: 20px solid transparent;
+    border-top: 20px solid transparent;
+    border-left: 20px solid #FF70BC;
+    border-bottom: 20px solid transparent;
+  }
+
+  100% {
+    top: -10px;
+    border-right: 20px solid transparent;
+    border-top: 20px solid transparent;
+    border-left: 20px solid #FF70BC;
+    border-bottom: 20px solid transparent;
+  }
+}
+
+/* --- 【アニメーション] 矢印② --- */
+@-webkit-keyframes yazirushi-se {
   0% {
      margin-left: 0;
   }
@@ -87,7 +119,22 @@
   }
 }
 
-@-webkit-keyframes www2 {
+@keyframes yazirushi-se {
+  0% {
+     margin-left: 0;
+  }
+
+  20% {
+    margin-left: 60px;
+  }
+
+  100% {
+    margin-left: 60px;
+  }
+}
+
+/* --- 【アニメーション] 矢印③ --- */
+@-webkit-keyframes yazirushi-th {
   0% {
     margin-left: 0;
   }
@@ -101,3 +148,16 @@
   }
 }
 
+@-webkit-keyframes yazirushi-th {
+  0% {
+    margin-left: 0;
+  }
+
+  30% {
+    margin-left: 120px;
+  }
+
+  100% {
+    margin-left: 120px;
+  }
+}
