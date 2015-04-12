@@ -6,6 +6,10 @@
   font-size: 1.8rem;
 }
 
+.detail-info-block-sentence a {
+  font-size: 1.4rem;
+}
+
 .font-strong {
   font-weight: bold;
 }
